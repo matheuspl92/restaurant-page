@@ -36,6 +36,15 @@ const loadPage = () => {
     header.appendChild(menuBtn);
     header.appendChild(contactBtn);
 
+    //Create footer elements
+    const footerText = document.createElement('p');
+    footerText.id = "footer-text";
+    footerText.innerHTML = "Made by ";
+    const footerLink = document.createElement('a');
+    footerLink.setAttribute("href", "https://github.com/matheuspl92");
+    footerLink.innerHTML = "matheuspl92";
+    footerText.appendChild(footerLink);
+    footer.appendChild(footerText);
 
 }
 
