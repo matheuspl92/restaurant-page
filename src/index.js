@@ -1,0 +1,1 @@
+console.log("index.js was called successfully");
