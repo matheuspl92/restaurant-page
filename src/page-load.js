@@ -53,7 +53,7 @@ const loadPage = () => {
     //  =>div
     //      =>img
     //      =>p
-    const midSectionContent = document.createElement('div');
+    /*const midSectionContent = document.createElement('div');
     midSectionContent.id = "mid-section-content";
 
     const aboutTitle = document.createElement('h2');
@@ -85,7 +85,7 @@ const loadPage = () => {
     midSectionContent.appendChild(chefTitle);
     midSectionContent.appendChild(chefDiv);
     chefDiv.appendChild(chefImg);
-    chefDiv.appendChild(chefText);
+    chefDiv.appendChild(chefText);*/
 
     //Create footer elements
     const footerText = document.createElement('p');
