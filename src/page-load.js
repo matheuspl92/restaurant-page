@@ -1,4 +1,5 @@
 const loadPage = () => {
+    console.log('page-load.js was called!');
     //Create main content div
     const content = document.createElement('div');
     content.id = "content";
@@ -94,7 +95,7 @@ const loadPage = () => {
     const footerLink = document.createElement('a');
     footerLink.setAttribute("href", "https://github.com/matheuspl92");
     footerLink.innerHTML = "matheuspl92";
-    
+
     footerText.appendChild(footerLink);
     footer.appendChild(footerText);
 
