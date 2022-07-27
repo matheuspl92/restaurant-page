@@ -1,3 +1,4 @@
+import loadContact from './contact';
 import loadHome from './home';
 import loadMenu from './menu';
 import loadPage from './page-load';
@@ -14,3 +15,4 @@ const menuBtn = document.getElementById('menu-btn');
 menuBtn.addEventListener('click', loadMenu);
 
 const contactBtn = document.getElementById('contact-btn');
+contactBtn.addEventListener('click', loadContact);
