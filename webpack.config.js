@@ -8,7 +8,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-          title: 'Sushi Samurai',
+          title: 'Samurai Sushi',
         }),
       ],
     devtool: 'inline-source-map',
