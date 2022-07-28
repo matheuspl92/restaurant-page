@@ -7,7 +7,7 @@ const loadContact = () => {
     }
 
     const phoneTitle = document.createElement('h2');
-    phoneTitle.innerHTML = 'Phone';
+    phoneTitle.innerHTML = '――― Phone ―――';
     phoneTitle.className = "mid-section-title";
 
     const phoneText = document.createElement('p');
@@ -18,7 +18,7 @@ const loadContact = () => {
     midSectionContent.appendChild(phoneText);
 
     const emailTitle = document.createElement('h2');
-    emailTitle.innerHTML = 'Email';
+    emailTitle.innerHTML = '――― Email ―――';
     emailTitle.className = "mid-section-title";
 
     const emailText = document.createElement('p');
@@ -29,7 +29,7 @@ const loadContact = () => {
     midSectionContent.appendChild(emailText);
 
     const socialTitle = document.createElement('h2');
-    socialTitle.innerHTML = 'Social media';
+    socialTitle.innerHTML = '――― Social media ―――';
     socialTitle.className = "mid-section-title";
 
     const socialText = document.createElement('p');

@@ -1,3 +1,8 @@
+import ImageNigiri from './nigiri.jpg'
+import ImageUramaki from './uramaki.jpg'
+import ImageTemaki from './temaki.jpeg'
+import ImageSake from './sake.jpg'
+
 const loadMenu = () => {
     console.log('menu.js was called!');
 
@@ -6,31 +11,31 @@ const loadMenu = () => {
     const menuArray = [
         {
             type: 'sushi',
-            name: 'sushi1',
-            description: 'Delicious sushi dish',
-            price: '$10',
-            imgPath: ''
+            name: 'Kami Nigiri',
+            description: 'Delicious nigiri made with fresh fish and top ingredients',
+            price: '$20',
+            imgPath: ImageNigiri
         },
         {
             type: 'sushi',
-            name: 'sushi2',
-            description: 'Delicious sushi dish',
-            price: '$15',
-            imgPath: ''
+            name: 'Salmon Uramaki',
+            description: 'Flavorful sushi dish made with salmon and cream cheese',
+            price: '$12',
+            imgPath: ImageUramaki
         },
         {
             type: 'temaki',
-            name: 'temaki1',
-            description: 'Delicious temaki dish',
-            price: '$20',
-            imgPath: ''
+            name: 'Salmon Temaki',
+            description: 'Amazing salmon and cream cheese temaki',
+            price: '$30',
+            imgPath: ImageTemaki
         },
         {
             type: 'sake',
-            name: 'sake1',
-            description: 'Original sake from Japan',
-            price: '$50',
-            imgPath: ''
+            name: 'Kojima Sake',
+            description: 'High quality original sake made in Japan',
+            price: '$100',
+            imgPath: ImageSake
         },
     ];
 
@@ -45,11 +50,16 @@ const loadMenu = () => {
                 itemNameAndPrice.className = 'item-name-price';
                 itemNameAndPrice.innerHTML = `${item.name}   ${item.price}`
 
+                const itemImg = document.createElement('img');
+                itemImg.className = 'item-img';
+                itemImg.setAttribute('src', item.imgPath)
+
                 const itemDescription = document.createElement('p');
                 itemDescription.className = 'item-description';
                 itemDescription.innerHTML = item.description;
 
                 itemDiv.appendChild(itemNameAndPrice);
+                itemDiv.appendChild(itemImg);
                 itemDiv.appendChild(itemDescription);
                 midSectionContent.appendChild(itemDiv);
     
@@ -64,21 +74,21 @@ const loadMenu = () => {
     }
 
     const sushiTitle = document.createElement('h2');
-    sushiTitle.innerHTML = 'Sushi';
+    sushiTitle.innerHTML = '――― Sushi ―――';
     sushiTitle.className = "mid-section-title";
 
     midSectionContent.appendChild(sushiTitle);
     _buildItems('sushi');
 
     const temakiTitle = document.createElement('h2');
-    temakiTitle.innerHTML = 'Temaki';
+    temakiTitle.innerHTML = '――― Temaki ―――';
     temakiTitle.className = "mid-section-title";
 
     midSectionContent.appendChild(temakiTitle);
     _buildItems('temaki');
 
     const sakeTitle = document.createElement('h2');
-    sakeTitle.innerHTML = 'Sake';
+    sakeTitle.innerHTML = '――― Sake ―――';
     sakeTitle.className = "mid-section-title";
     
     midSectionContent.appendChild(sakeTitle);
