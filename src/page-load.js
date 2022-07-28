@@ -1,5 +1,4 @@
 const loadPage = () => {
-    console.log('page-load.js was called!');
     //Create main content div
     const content = document.createElement('div');
     content.id = "content";

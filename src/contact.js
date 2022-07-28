@@ -1,5 +1,4 @@
 const loadContact = () => {
-    console.log('contact.js was called!');
 
     const midSectionContent = document.getElementById('mid-section-content');
     while (midSectionContent.hasChildNodes()) {

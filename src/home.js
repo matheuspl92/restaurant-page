@@ -1,7 +1,6 @@
 import ImageChef from './chef.jpg'
 
 const loadHome = () => {
-    console.log('home.js was called!');
 
     function _buildHome(midSectionContent) {
         const aboutTitle = document.createElement('h2');

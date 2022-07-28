@@ -4,7 +4,6 @@ import ImageTemaki from './temaki.jpeg'
 import ImageSake from './sake.jpg'
 
 const loadMenu = () => {
-    console.log('menu.js was called!');
 
     //Menu items array
 

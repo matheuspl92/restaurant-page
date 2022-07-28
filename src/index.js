@@ -5,8 +5,6 @@ import loadMenu from './menu';
 import loadPage from './page-load';
 import focusBtn from './focusBtn';
 
-console.log("index.js was called successfully");
-
 loadPage();
 loadHome();
 focusBtn(document.getElementById('home-btn'));
