@@ -9,6 +9,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
           title: 'Samurai Sushi',
+          favicon: './src/favicon-32x32.png',
         }),
       ],
     devtool: 'inline-source-map',
@@ -28,6 +29,10 @@ module.exports = {
           },
           {
             test: /\.(woff|woff2|eot|ttf|otf)$/i,
+            type: 'asset/resource',
+          },
+          {
+            test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
             type: 'asset/resource',
           },
         ],
