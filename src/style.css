@@ -207,6 +207,7 @@ table {
 }
 
 .item-description {
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -226,4 +227,68 @@ table {
 a {
     text-decoration: none;
     color: red;
+}
+
+/* ================ MEDIA QUERIES ================ */
+
+@media (max-width: 660px) {
+    /* HEADER */
+
+    #restaurant-name {
+        font-size: 6vw;
+        margin-bottom: 0;
+    }
+    
+    .nav-button {
+        height: 100%;
+        width: 30vw;
+        font-size: 1.5em;
+    }
+
+    /* MIDDLE SECTION */
+
+    /* Home */
+
+#mid-section-content {
+    width: 80vw;
+}
+
+}
+
+@media (max-width: 540px) {
+
+    .mid-section-title {
+        font-size: 8vw;
+    }
+    
+    .mid-section-content {
+        font-size: 1.25em;
+    }
+    
+    #chef-img {
+        height: 55vw;
+        width: 55vw;
+    }
+    
+    /* Menu */
+    
+    .item-name-price {
+        font-size: 1.5em;
+    }
+    
+    .item-img {
+        height: 55vw;
+        width: 55vw;
+    }
+    
+    .item-description {
+        font-size: 1.25em;
+    }
+    
+}
+
+@media (max-width: 350px) {
+    #footer-text {
+        text-align: center;
+    }
 }

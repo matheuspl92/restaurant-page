@@ -29,7 +29,7 @@ const loadContact = () => {
     midSectionContent.appendChild(emailText);
 
     const socialTitle = document.createElement('h2');
-    socialTitle.innerHTML = '――― Social media ―――';
+    socialTitle.innerHTML = '―― Social media ――';
     socialTitle.className = "mid-section-title";
 
     const socialText = document.createElement('p');
