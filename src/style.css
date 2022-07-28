@@ -47,12 +47,76 @@ table {
 	border-spacing: 0;
 }
 
+/* MY FONTS */
+
+
+@font-face {
+    font-family: 'japan-title';
+    src: url('./Japanese 3017.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'japan';
+    src: url('./Japan.ttf') format('truetype');
+}
+
+
 /* CONTENT CONTAINER */
 
 #content {
     height: 100vh;
     display: grid;
-    grid-template-rows: 100px 1fr 50px;
+    grid-template-rows: 120px 1fr 50px;
     background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('./background.jpg');
     background-size: cover;
+}
+
+/* HEADER */
+
+#header {
+    display: grid;
+    grid-template-columns: repeat(3, 1ft);
+    grid-template-rows: 2f 1f;
+    background-color: white;
+    box-shadow: 5px 5px 100px gray;
+    padding: 5px;
+}
+
+#restaurant-name {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-family: 'japan-title', sans-serif;
+    font-size: 3em;
+    letter-spacing: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-button {
+    position: relative;
+    height: 90px;
+    width: 130px;
+    background-color: white;
+    border: 4px solid red;
+    border-radius: 45px;
+    align-self: center;
+    justify-self: center;
+    color: red;
+    font-family: 'japan', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    transition: border .3s;
+}
+
+.nav-button:hover {
+    cursor: pointer;
+    border: 8px solid red;
+    filter: brightness(90%);
+}
+
+.nav-button:active {
+    color: white;
+    background-color: red;
 }
