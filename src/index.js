@@ -1,3 +1,4 @@
+import './style.css';
 import loadContact from './contact';
 import loadHome from './home';
 import loadMenu from './menu';
