@@ -1,5 +1,7 @@
 # restaurant-page
 
+GitHub Pages link: https://matheuspl92.github.io/restaurant-page/
+
 
 //////// CREDITS /////////
 
